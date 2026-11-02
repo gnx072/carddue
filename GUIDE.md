@@ -122,8 +122,8 @@ Other fields:
 Apple requires screenshots for its largest iPhone size.
 
 1. In Xcode, pick the largest iPhone Pro Max simulator and press Run.
-2. Add a few sample cards, such as Visa Gold, Mastercard and Amex. Mark one as paid.
-3. Press Cmd+S in the Simulator to save a screenshot. Take the list and Add Card. Skip Settings, because test builds show the Simulate Next Month button there.
+2. Add a few sample cards with generic names, such as Travel Card, Store Card and Car Loan. Avoid bank and card brand names, which can cause a rejection. Mark one as paid.
+3. Press Cmd+S in the Simulator to save a screenshot. Don't use a Mac screenshot, which includes the phone frame and is the wrong size. Take the list and Add Card. Skip Settings, because test builds show the Simulate Next Month button there.
 4. Upload them on the version page in App Store Connect.
 
 ## 9. Submit for review

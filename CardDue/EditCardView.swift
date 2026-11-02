@@ -22,7 +22,7 @@ struct EditCardView: View {
         NavigationStack {
             Form {
                 Section {
-                    TextField("Name, such as Visa Gold", text: $name)
+                    TextField("Name, such as Travel Card", text: $name)
                     Picker("Due day", selection: $dueDay) {
                         ForEach(1...31, id: \.self) { Text("\($0)").tag($0) }
                     }
