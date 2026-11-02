@@ -2,6 +2,24 @@
 
 App name: CardDue. Bundle ID: `com.gnx072.carddue`. iPhone only, iOS 17 or later, free.
 
+## Checklist
+
+Possible now:
+
+- [ ] Test the monthly reset with Simulate Next Month (step 3)
+- [ ] Take screenshots (step 8)
+- [ ] Read the listing text and form answers (step 7)
+
+Needs the approved Developer Program membership:
+
+- [ ] Select the paid team in Xcode, not Personal Team (step 2)
+- [ ] Create the app in App Store Connect (step 5)
+- [ ] Upload a build (step 6)
+- [ ] Enter the listing and form answers (step 7)
+- [ ] Submit for review (step 9)
+
+Already done: support page, privacy policy page, app icon, privacy manifest.
+
 ## 1. Get the code on your Mac
 
 Install the current Xcode from the Mac App Store and open it once. Then in Terminal:
@@ -34,7 +52,7 @@ Check these:
 
 - Add two cards. Allow notifications when asked.
 - Tick one off. It moves to Paid.
-- Close the app, change the phone's date to the 1st of next month in Settings > General > Date & Time, and reopen it. Everything is unpaid again. Set the date back to automatic afterwards.
+- Open Settings in the app and tap Simulate Next Month. Everything is unpaid and the title shows next month. Leave the app and reopen it: the real month and your ticks return.
 - Set a reminder for a card due tomorrow and confirm that it arrives at 9:00 AM.
 
 ## 4. Publish the support and privacy pages
@@ -89,8 +107,12 @@ Other fields:
 
 - Category: Finance
 - Price: Free. Choose this under Pricing and Availability.
-- Age rating: answer the questionnaire. Every answer should be No or None.
-- App Privacy: choose "Data Not Collected" and publish it.
+- Age rating: answer the questionnaire. Every answer should be No or None, because the app has no such content, no web access and no user-generated content shared with others.
+- App Privacy: choose "Data Not Collected" and publish it. The app has no tracking, accounts or analytics.
+- Encryption: the app uses none.
+- Content rights: the app contains no third-party content.
+- App Review contact: your name, phone number and email. Apple keeps these private.
+- Sign-in required: No.
 - Privacy Policy URL and Support URL: from step 4.
 - Copyright: 2026, and your name.
 - EU: App Store Connect asks whether you are a trader under the Digital Services Act. A trader's contact details are shown publicly in the EU. If you would rather not do that, remove the EU countries from Availability.
@@ -101,7 +123,7 @@ Apple requires screenshots for its largest iPhone size.
 
 1. In Xcode, pick the largest iPhone Pro Max simulator and press Run.
 2. Add a few sample cards, such as Visa Gold, Mastercard and Amex. Mark one as paid.
-3. Press Cmd+S in the Simulator to save a screenshot. Take 3 of them: the list, Add Card and Settings.
+3. Press Cmd+S in the Simulator to save a screenshot. Take the list and Add Card. Skip Settings, because test builds show the Simulate Next Month button there.
 4. Upload them on the version page in App Store Connect.
 
 ## 9. Submit for review

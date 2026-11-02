@@ -30,6 +30,17 @@ struct SettingsView: View {
                         Text("Reminders arrive at 9:00 AM and stop once a card is marked as paid.")
                     }
                 }
+
+                #if DEBUG
+                Section {
+                    Button("Simulate Next Month") {
+                        store.simulateNextMonth()
+                        dismiss()
+                    }
+                } footer: {
+                    Text("Test builds only. Reopen the app to return to today.")
+                }
+                #endif
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)

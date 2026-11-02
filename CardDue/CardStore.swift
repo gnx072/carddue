@@ -66,6 +66,14 @@ final class CardStore {
         reschedule()
     }
 
+    #if DEBUG
+    /// Jumps the list ahead a month to test the reset. Nothing is saved, and
+    /// the real date returns when the app next becomes active.
+    func simulateNextMonth() {
+        now = Month.calendar.date(byAdding: .month, value: 1, to: now) ?? now
+    }
+    #endif
+
     private func load() {
         isLoading = true
         defer { isLoading = false }
